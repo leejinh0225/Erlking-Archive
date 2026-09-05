@@ -113,20 +113,23 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="study-card study-card--pending" aria-label="유체역학 학습 노트 준비 중">
+            <article className="study-card study-card--active" aria-label="유체역학 학습 노트">
               <div className="card-topline">
-                <span className="status"><i /> Planned</span>
+                <span className="status status--live"><i /> Live</span>
                 <span className="course-code">MC2102</span>
               </div>
               <div>
                 <p className="card-kicker">Course archive</p>
                 <h3>Fluid Mechanics</h3>
                 <p className="card-description">
-                  동역학과 같은 형식의 학습 홈페이지를 준비하고 있습니다.
+                  유체역학 강의별 학습 노트와 원문 자료
                 </p>
               </div>
-              <div className="pending-action" aria-disabled="true">
-                <span aria-hidden="true">—</span> 홈페이지 준비 중
+              <div className="card-actions">
+                <a className="primary-link" href="https://leejinh0225.github.io/MC2102-Fluid/index.html" target="_blank" rel="noreferrer">
+                  학습 노트 열기 <span aria-hidden="true">↗</span>
+                </a>
+                <a className="icon-link" href="https://github.com/leejinh0225/MC2102-Fluid" target="_blank" rel="noreferrer" aria-label="MC2102 Fluid Mechanics GitHub 저장소 열기">GH</a>
               </div>
             </article>
           </div>
