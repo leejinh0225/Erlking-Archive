@@ -65,7 +65,7 @@ export default function Home() {
           <p className="eyebrow"><span /> Personal index · 2026</p>
           <h1 id="archive-title">Archive.</h1>
           <div className="masthead-meta" aria-label="아카이브 구성">
-            <span>02 study tracks</span>
+            <span>03 study tracks</span>
             <span>04 projects</span>
           </div>
         </section>
@@ -80,6 +80,26 @@ export default function Home() {
           </div>
 
           <div className="study-grid">
+            <article className="study-card study-card--active" aria-label="공업수학 2 학습 노트">
+              <div className="card-topline">
+                <span className="status status--live"><i /> Live</span>
+                <span className="course-code">MC2202</span>
+              </div>
+              <div>
+                <p className="card-kicker">Course archive</p>
+                <h3>Engineering Mathematics II</h3>
+                <p className="card-description">
+                  공업수학 2 강의자료 기반의 한국어 개념 해설과 상세 문제 풀이
+                </p>
+              </div>
+              <div className="card-actions">
+                <a className="primary-link" href="https://leejinh0225.github.io/MC2202-Engineering-Mathematics-2/" target="_blank" rel="noreferrer">
+                  학습 노트 열기 <span aria-hidden="true">↗</span>
+                </a>
+                <a className="icon-link" href="https://github.com/leejinh0225/MC2202-Engineering-Mathematics-2" target="_blank" rel="noreferrer" aria-label="MC2202 Engineering Mathematics II GitHub 저장소 열기">GH</a>
+              </div>
+            </article>
+
             <article className="study-card study-card--active">
               <div className="card-topline">
                 <span className="status status--live"><i /> Live</span>

@@ -11,4 +11,5 @@ const assets = [...html.matchAll(/(?:src|href)="([^"?#]+)"/g)]
 if (!assets.some((url) => url.endsWith('.css'))) throw new Error('Missing stylesheet');
 for (const url of assets) await access(path.join(root, url.slice(prefix.length)));
 if (!html.includes('https://leejinh0225.github.io/MC2102-Fluid/index.html')) throw new Error('Missing Fluid link');
+if (!html.includes('https://leejinh0225.github.io/MC2202-Engineering-Mathematics-2/')) throw new Error('Missing Engineering Mathematics II link');
 console.log(`Pages asset paths verified: ${assets.length}`);
