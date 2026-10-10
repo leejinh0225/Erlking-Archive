@@ -6,5 +6,9 @@
 
 ## Contents
 
-- Study: MC2103 Dynamics, MC2102 Fluid Mechanics
+- Study: MC2202 Engineering Mathematics II, MC2103 Dynamics, MC2102 Fluid Mechanics
 - Projects: IT ARENA, PnP Study, Drawing Machine, Table Tennis Robot
+
+## Design
+
+Crimson 디자인 시스템(강조색 crimson 하나, 앰비언트·엠버 빛, Pretendard)을 따릅니다. 라이트·다크 테마를 지원합니다.
