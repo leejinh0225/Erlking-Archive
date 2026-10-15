@@ -1,5 +1,6 @@
 import { Fragment, type CSSProperties } from 'react';
 import Interactions from './interactions';
+import StudyPlan from './study-plan';
 
 const courses = [
   {
@@ -84,7 +85,7 @@ export const dynamic = 'force-static';
 export default function Home() {
   return (
     <>
-      <a className="skip-link" href="#study">
+      <a className="skip-link" href="#plan">
         본문으로 건너뛰기
       </a>
 
@@ -95,6 +96,7 @@ export default function Home() {
           </a>
           <nav className="nav-links" aria-label="섹션">
             <span className="nav-pill" aria-hidden="true" />
+            <a href="#plan">시험 계획</a>
             <a href="#study">학습 노트</a>
             <a href="#projects">프로젝트</a>
             <span className="nav-dot" aria-hidden="true" />
@@ -133,13 +135,16 @@ export default function Home() {
         </div>
         <nav className="m-menu" id="mMenu" aria-label="섹션 메뉴" hidden>
           <div className="wrap">
-            <a href="#study" style={order(0)}>
+            <a href="#plan" style={order(0)}>
+              시험 계획
+            </a>
+            <a href="#study" style={order(1)}>
               학습 노트
             </a>
-            <a href="#projects" style={order(1)}>
+            <a href="#projects" style={order(2)}>
               프로젝트
             </a>
-            <a href="https://github.com/leejinh0225" target="_blank" rel="noreferrer" style={order(2)}>
+            <a href="https://github.com/leejinh0225" target="_blank" rel="noreferrer" style={order(3)}>
               GitHub
             </a>
           </div>
@@ -166,11 +171,11 @@ export default function Home() {
             </h1>
             <p className="lead">강의별 학습 노트와 로봇 프로젝트 저장소를 한곳에 모은 개인 인덱스.</p>
             <div className="btn-row">
-              <a className="btn btn-primary" href="#study" data-magnetic>
-                학습 노트 보기 <span className="arr down" aria-hidden="true">↓</span>
+              <a className="btn btn-primary" href="#plan" data-magnetic>
+                시험 계획 보기 <span className="arr down" aria-hidden="true">↓</span>
               </a>
-              <a className="btn btn-secondary" href="https://github.com/leejinh0225" target="_blank" rel="noreferrer">
-                GitHub <span className="arr ne" aria-hidden="true">↗</span>
+              <a className="btn btn-secondary" href="#study">
+                학습 노트 <span className="arr down" aria-hidden="true">↓</span>
               </a>
             </div>
             <p className="hero-meta">
@@ -183,6 +188,9 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        {/* ============================ EXAM PLAN ============================ */}
+        <StudyPlan />
 
         {/* ============================ STUDY ============================ */}
         <section className="block" id="study" aria-labelledby="study-title">
